@@ -45,6 +45,7 @@
 						"value": "@activity('LK_CHD_TBL_VIEW').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Execute Pipeline1",
