@@ -26,6 +26,43 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "PL_SQL_TBL",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LK_CHD_TBL_VIEW",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('LK_CHD_TBL_VIEW').output.value",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Execute Pipeline1",
+							"type": "ExecutePipeline",
+							"dependsOn": [],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "PL_CHILD",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true
+							}
+						}
+					]
+				}
 			}
 		],
 		"annotations": []
