@@ -8,6 +8,18 @@
 		"SqlServer1_password": {
 			"value": ""
 		},
+		"LS_SQL_SERVER_password": {
+			"value": ""
+		},
+		"LS_LKP_UP_password": {
+			"value": ""
+		},
+		"LS_PQT_CPY_accountKey": {
+			"value": ""
+		},
+		"LS_OnPrem_password": {
+			"value": ""
+		},
 		"SqlServer1_properties_typeProperties_server": {
 			"value": "VK\\SQLEXPRESS"
 		},
@@ -15,6 +27,36 @@
 			"value": "AdventureWorks2025"
 		},
 		"SqlServer1_properties_typeProperties_userName": {
+			"value": "vkk"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_server": {
+			"value": "VK\\SQLEXPRESS"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_userName": {
+			"value": "vkk"
+		},
+		"LS_LKP_UP_properties_typeProperties_server": {
+			"value": "VK\\SQLEXPRESS"
+		},
+		"LS_LKP_UP_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LKP_UP_properties_typeProperties_userName": {
+			"value": "vkk"
+		},
+		"LS_PQT_CPY_properties_typeProperties_url": {
+			"value": "https://adlsdevexceldest.dfs.core.windows.net/"
+		},
+		"LS_OnPrem_properties_typeProperties_server": {
+			"value": "VK\\SQLEXPRESS"
+		},
+		"LS_OnPrem_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_OnPrem_properties_typeProperties_userName": {
 			"value": "vkk"
 		},
 		"containerUri": {
