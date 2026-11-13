@@ -1,0 +1,20 @@
+{
+	"name": "DS_LKP_UP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKP_UP",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schemaname": {
+				"type": "string"
+			},
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
