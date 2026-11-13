@@ -71,6 +71,43 @@
 						}
 					}
 				]
+			},
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "PL_CPY_SQL_SERVER",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_CHD_SP",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"TableSchema": {
+							"value": "@pipeline().parameters.TableSchema",
+							"type": "Expression"
+						},
+						"TableName": {
+							"value": "@pipeline().parameters.TableName",
+							"type": "Expression"
+						},
+						"WatermarkColumn": {
+							"value": "@pipeline().parameters.WatermarkColumn",
+							"type": "Expression"
+						}
+					}
+				}
 			}
 		],
 		"parameters": {
